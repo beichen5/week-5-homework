@@ -2,13 +2,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: orbitron;
+  src: url(Orbitron-VariableFont_wght.ttf);
+}
+
 body {
   font-size: 22px;
   line-height: 1.5;
   font-family: Helvetica, sans-serif;
-  color: #111;
+  color: white;
+  background: rgb(71,154,164);
+  background: linear-gradient(0deg, rgba(71,154,164,1) 0%, rgba(252,195,179,1) 50%, rgba(253,229,106,1) 100%);
   margin: 0;
   padding: 20px 40px;
+  font-family: orbitron;
 
   /* This will center anything on your page */
   display: flex;
@@ -22,10 +30,17 @@ body {
   gap: 20px;
   padding: 20px 30px;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 10px;
 }
 
-.time {
-  
+svg{
+  width: 30px;
+  height: 30px;
+}
+.moon{
+  display:none;
+}
+.sun{
+  display:none;
 }
